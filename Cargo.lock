@@ -110,8 +110,6 @@ dependencies = [
 [[package]]
 name = "mathical"
 version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "929a1c85495d6f51b0466a8c7b331d7a924ae6c5a606496735094edface3d376"
 dependencies = [
  "colored",
  "fltk",

@@ -6,4 +6,4 @@ edition = "2018"
 
 [dependencies]
 fltk = "^0.15"
-mathical = "0.1.2"
+mathical = {path = "../mathical"}

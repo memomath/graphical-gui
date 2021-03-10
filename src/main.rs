@@ -1,6 +1,10 @@
 use fltk::*;
 use mathical::{self, cli};
 
+fn functioner(x: f64) -> f64 {
+    x * x
+}
+
 fn main() {
     let app = app::App::default();
 
@@ -8,7 +12,7 @@ fn main() {
 
     let mut graph = button::Button::new(160, 210, 80, 40, "Graph");
 
-    graph.set_callback(move || cli::graph::graph());
+    graph.set_callback(move || cli::graph::graph(functioner));
 
     win.end();
     win.show();
