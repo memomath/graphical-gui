@@ -5,10 +5,6 @@ fn functioner(x: f64) -> f64 {
     x * x
 }
 
-fn drawer(){
-    cli::graph::graph(functioner);
-}
-
 fn main() {
     let app = app::App::default();
 
@@ -17,8 +13,7 @@ fn main() {
     let mut framer = frame::Frame::new(0, 0, 400, 200, "");
 
     let mut graph = button::Button::new(160, 210, 80, 40, "Graph");
-    
-    graph.set_callback(move || framer.set_label("Ho"));
+
     graph.set_callback(move || cli::graph::graph(functioner));
 
     win.end();
